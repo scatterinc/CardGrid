@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is my Playground page</h1>
+    <h1>Thank You</h1>
     <b-container>
       <b-card-group
         v-for="(cardRow, index) in this.cardRowData"
