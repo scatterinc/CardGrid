@@ -29,25 +29,23 @@
 
 <script>
 import sampleCards from '@/helpers/_cardsSample'
-import _ from 'lodash';
+import _ from 'lodash'
 
 export default {
-  data(){
+  data () {
     return {
-      sampleData: null,
+      sampleData: null
     }
   },
-  mounted() {
-    //populates the component data with sample data
+  mounted () {
+    // populates the component data with sample data
     this.sampleData = sampleCards
   },
   computed: {
-    cardRowData(){
+    cardRowData () {
       return _.chunk(this.sampleData, 4)
     }
   }
 
 }
 </script>
-
-
